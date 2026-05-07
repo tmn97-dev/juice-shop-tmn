@@ -51,7 +51,7 @@ export const cutOffPoisonNullByte = (str: string) => {
   return str
 }
 
-// Updated isAuthorized implementation
+// Updated isAuthorized implementationa
 export const isAuthorized = () => {
   return (req: Request, res: Response, next: NextFunction) => {
     const token = req.headers.authorization ? req.headers.authorization.split(' ')[1] : req.cookies.token
